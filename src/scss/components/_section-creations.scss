@@ -1,0 +1,38 @@
+.competences{
+
+  margin: var(--padding-large) 0 ;
+  padding: var(--padding-thin);
+
+  display: flex;
+  flex-direction: column;
+  article{
+    margin-bottom: var(--padding-thin);
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+      margin-top: var(--padding-large);
+      width: 15%;
+    }
+    p{
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $vw-medium){
+  .competences{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    article{
+      width: 48%;
+    }
+  }
+}
+
+

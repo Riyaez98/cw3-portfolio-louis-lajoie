@@ -1,0 +1,24 @@
+.bouton{
+  text-transform: uppercase;
+
+  padding: 12px 30px;
+
+  background-image: var(--color-gradient);
+
+  &:link{
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  &:visited{
+    color: var(--color-white);
+  }
+
+  &:active{
+    color: var(--color-active);
+  }
+
+  &:focus{
+    color: var(--color-focus);
+  }
+}
