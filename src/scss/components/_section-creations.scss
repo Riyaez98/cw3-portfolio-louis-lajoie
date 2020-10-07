@@ -1,6 +1,6 @@
 .competences{
 
-  margin: var(--padding-large) 0 ;
+  margin: var(--padding-large) auto ;
   padding: var(--padding-thin);
 
   display: flex;
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (min-width: $vw-medium){
+@media screen and (min-width: $vw-medium)/* and (max-width: $vw-huge)*/{
   .competences{
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,4 +35,10 @@
   }
 }
 
-
+@media screen and (min-width: $vw-huge){
+  .competences{
+    article{
+      width: 30%;
+    }
+  }
+}
